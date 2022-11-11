@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <a [routerLink]="['/']">
+    <h1>Task Control Manager</h1>
+  </a>
+  <p class="text" *ngIf="userEmail">Hello {{ userEmail }}!</p>
+  <a class="button profile" *ngIf="userEmail"
+    ><fa-icon [icon]="faUser" [title]="'Profile'"></fa-icon
+  ></a>
+  <a class="button login" *ngIf="userEmail"
+    ><fa-icon
+      [icon]="faRightToBracket"
+      [title]="'Log out'"
+      (click)="onLogoutClick()"
+    ></fa-icon
+  ></a>
+</div>

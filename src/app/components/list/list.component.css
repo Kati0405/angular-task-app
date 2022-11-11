@@ -1,0 +1,35 @@
+.list-menu-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 100%;
+    color: grey;
+    margin-bottom: 5px;
+}
+
+.list-menu-item span{
+    font-size: 10px;
+    color: gray;
+}
+
+.list-menu-item:hover{
+    background: lightgray;
+    cursor: pointer;
+}
+
+.list-menu-item.is-active {
+    background-color: #cff8ef;
+    color: darkcyan;
+}
+
+/* app-action-panel {
+    display: none;
+}
+
+.list-menu-item:hover app-action-panel {
+       display: flex
+  } */
+

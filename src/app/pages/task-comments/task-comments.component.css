@@ -1,0 +1,11 @@
+.centered-content {
+    border-radius: 6px;
+    background-color: white;
+    padding: 40px;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 4px;
+    resize: none;
+}

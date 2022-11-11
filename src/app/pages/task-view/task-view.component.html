@@ -1,0 +1,40 @@
+<div class="task-manager-container">
+  <div class="sidebar">
+    <app-lists></app-lists>
+    <button
+      class="button-primary is-primary"
+      (click)="modalService.open('modal-new-list')"
+    >
+      + New list
+    </button>
+  </div>
+  <div class="task-list-container">
+    <div>
+      <app-tasks> </app-tasks>
+    </div>
+  </div>
+  <app-modal id="modal-new-list" title="Create new List">
+    <span class="close" (click)="modalService.close('modal-new-list')"
+      >&times;</span
+    >
+    <app-new-list></app-new-list>
+  </app-modal>
+  <app-modal id="modal-new-task" title="Create new Task">
+    <span class="close" (click)="modalService.close('modal-new-task')"
+      >&times;</span
+    >
+    <app-new-task></app-new-task>
+  </app-modal>
+  <app-modal id="modal-edit-list" title="Edit List">
+    <span class="close" (click)="modalService.close('modal-edit-list')"
+      >&times;</span
+    >
+    <app-edit-list></app-edit-list>
+  </app-modal>
+  <app-modal id="modal-edit-task" title="Edit Task">
+    <span class="close" (click)="modalService.close('modal-edit-task')"
+      >&times;</span
+    >
+    <app-edit-task></app-edit-task>
+  </app-modal>
+</div>

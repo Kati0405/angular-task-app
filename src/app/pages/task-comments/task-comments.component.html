@@ -1,0 +1,18 @@
+<div class="centered-content">
+  <h1 class="title">{{ title }}</h1>
+  <p>Create Date: {{ createdDate | date: 'medium' }}</p>
+  <div class="comment-field">
+    <h5>Add new comment</h5>
+    <textarea #commentMessage rows="5"></textarea>
+    <button class="button-primary" (click)="postComment(commentMessage.value)">
+      Post
+    </button>
+  </div>
+  <h5>All comments: {{ taskService.comments.length }}</h5>
+  <div *ngIf="taskService.comments">
+    <app-comment
+      *ngFor="let comment of taskService.comments"
+      [comment]="comment"
+    ></app-comment>
+  </div>
+</div>

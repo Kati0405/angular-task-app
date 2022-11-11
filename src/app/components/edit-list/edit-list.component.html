@@ -1,0 +1,24 @@
+<form [formGroup]="form">
+  <div class="field">
+    <input
+      #listTitleInput
+      type="text"
+      name=""
+      id=""
+      placeholder="Enter new list's name"
+      formControlName="title"
+      appFocus
+    />
+
+    <button
+      class="button-primary"
+      type="submit"
+      (click)="updateList(listTitleInput.value)"
+    >
+      Update
+    </button>
+  </div>
+  <p class="error-text" *ngIf="title.errors?.minlength && title.touched">
+    Min length of list's name should be 3 symbols
+  </p>
+</form>

@@ -1,0 +1,18 @@
+<div
+  class="task"
+  [ngClass]="{ archived: task.archived }"
+  [routerLink]="['/lists', selectedListId, 'edit-task', task._id]"
+  routerLinkActive="is-active"
+>
+  <p class="task-title">{{ task.title }}</p>
+  <span>{{ task.createdDate | date: 'medium' }}</span>
+  <app-action-panel
+    *ngIf="selectedTaskId == task._id"
+    [taskId]="task._id"
+    (newArchiveEvent)="onArchiveTaskClick($event)"
+    (newSelectedIdEvent)="onDeleteTaskClick($event)"
+    [editModal]="'modal-edit-task'"
+    [showMore]="false"
+    [isTask]="true"
+  ></app-action-panel>
+</div>

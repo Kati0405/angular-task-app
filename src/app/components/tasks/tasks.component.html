@@ -1,0 +1,33 @@
+<h1 class="title">Tasks</h1>
+
+<div class="tasks-container">
+  <app-tasks-column
+    [column]="'todoList'"
+    [connectedTo]="['progressList', 'doneList']"
+    taskStatus="todo"
+    title="TO DO"
+  ></app-tasks-column>
+  <app-tasks-column
+    [column]="'progressList'"
+    [connectedTo]="['doneList', 'todoList']"
+    taskStatus="progress"
+    title="IN PROGRESS"
+  ></app-tasks-column>
+  <app-tasks-column
+    [column]="'doneList'"
+    [connectedTo]="['todoList', 'progressList']"
+    taskStatus="done"
+    title="DONE"
+  ></app-tasks-column>
+</div>
+<button
+  class="circle-add-button button-primary"
+  (click)="modalService.open('modal-new-task')"
+>
+  &plus;
+</button>
+<!-- <div *ngIf="tasks">
+  <h3 class="empty-state" *ngIf="tasks.length === 0">
+    No tasks in this list yet
+  </h3>
+</div> -->

@@ -1,0 +1,191 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    background: #36A9AE;
+}
+
+.centered-container {
+    margin: 0 auto;
+    width: 1000px;
+    height: 83%;
+    margin-top: 2%;
+}
+
+.centered-content p {
+  font-size: 12px;
+}
+
+.button-primary {
+    background-color: #36A9AE;
+    background-image: linear-gradient(#37ADB2, #329CA0);
+    border: 1px solid #2A8387;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    line-height: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 9px 15px;
+    text-align: center;
+    transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-right: 10px;
+    /* width: 100%; */
+  }
+  
+  .button-primary:hover {
+    box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+    text-decoration: none;
+    transition-duration: .15s, .15s;
+  }
+  
+  .button-primary:active {
+    box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+  }
+  
+  .button-primary:disabled {
+    cursor: not-allowed;
+    opacity: .6;
+  }
+  
+  .button-primary:disabled:active {
+    pointer-events: none;
+  }
+  
+  .button-primary:disabled:hover {
+    box-shadow: none;
+  } 
+
+
+.button-secondary {
+  background-color: #FFFFFF;
+  border: 1px solid rgb(209,213,219);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;  font-size: .875rem;
+  font-size: 17px;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-secondary:hover {
+  background-color: rgb(249,250,251);
+}
+
+.button-secondary:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button-secondary:focus-visible {
+  box-shadow: none;
+}
+
+.modal-box {
+  min-height: 200px;
+  width: 100%;
+  max-width: 580px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 35px;
+}
+
+.field {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+input {
+padding: 7px;
+border-radius: 4px;
+background: #fbfbfb;
+border: 2px solid transparent;
+box-shadow: 0 0 0 1px #dddddd, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+}
+
+input:focus {
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.white-box {
+  position: absolute;
+  top: 50%; right: 50%;
+  transform: translate(50%,-50%);
+  background: #f2f2f2;
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.white-box input {
+  width: 350px;
+}
+
+.white-box button {
+  position: absolute;
+  right: 38px;
+  bottom: 20px;
+}
+
+select {
+  border-radius: 5px;
+  border: gray;
+}
+
+.title {
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #36A9AE;
+}
+
+.hide {
+  display: none;
+}
+
+.error-text {
+  font-size: 10px;
+  color: red;
+}
+
+.close {
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  right: 3px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+} 

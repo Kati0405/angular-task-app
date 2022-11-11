@@ -1,0 +1,8 @@
+<div class="centered-content">
+  <div class="white-box">
+    <h1 class="title">{{ list.title }}</h1>
+    <p>Create Date: {{ list.createdDate | date: 'medium' }}</p>
+    <p>Details: {{ list.description }}</p>
+    <div class="back"><a routerLink="/lists">Back</a></div>
+  </div>
+</div>

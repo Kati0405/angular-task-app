@@ -1,0 +1,20 @@
+.comment-item {
+    position: relative;
+    background: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 2px solid darkcyan;
+}
+
+.comment-item .date {
+    font-size: 10px;
+}
+
+.comment-item h6 {
+    margin: 0;
+}
+
+.comment-item p {
+    font-size: 14px;
+}

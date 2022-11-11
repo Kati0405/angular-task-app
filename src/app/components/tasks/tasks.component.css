@@ -1,0 +1,32 @@
+.empty-state {
+    font-size: 20px;
+    font-weight: 100;
+    color: gray;
+    text-align: center;
+    text-transform: none;
+}
+
+.tasks-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.circle-add-button {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: #36A9AE;
+    bottom: 35px;
+    right: 35px;
+    border-radius: 50%;
+    border: none;
+    font-size: 2rem;
+}
+
+.tasks-container-item {
+    margin: 5px;
+    padding: 10px;
+    background-color: #cff8ef;
+    border-radius: 5px;
+}
+

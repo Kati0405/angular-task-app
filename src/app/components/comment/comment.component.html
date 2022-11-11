@@ -1,0 +1,8 @@
+<div class="comment-item">
+  <h6>{{ userEmail }}</h6>
+  <p class="date">{{ date | date: 'short' }}</p>
+  <p>{{ comment.message }}</p>
+  <span title="Delete" class="close" (click)="deleteComment(comment)"
+    >&times;</span
+  >
+</div>

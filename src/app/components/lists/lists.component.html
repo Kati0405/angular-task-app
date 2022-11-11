@@ -1,0 +1,20 @@
+<h1 class="title">Lists</h1>
+<app-sorting-panel
+  (SortDirectionEvent)="this.sortingService.onsort($event)"
+  (FilterEvent)="this.sortingService.onfilter($event)"
+  (SortParamEvent)="this.sortingService.onsortparam($event)"
+></app-sorting-panel>
+<div class="list-menu">
+  <div *ngIf="taskService.lists">
+    <app-list
+      *ngFor="
+        let list of taskService.lists
+          | filter: this.sortingService.filterInput
+          | sort
+            : [this.sortingService.SortParam, this.sortingService.SortDirection]
+      "
+      [list]="list"
+    >
+    </app-list>
+  </div>
+</div>

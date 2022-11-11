@@ -1,0 +1,21 @@
+.tasks-container-item {
+    margin: 5px;
+    padding: 10px;
+    background-color: #cff8ef;
+    border-radius: 5px;
+}
+
+h5 {
+    color: #36A9AE;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.tasks-column {
+    min-height: 10px;
+}
+
+.column-header {
+    display: flex;
+    justify-content: space-between;
+}

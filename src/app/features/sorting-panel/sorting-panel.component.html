@@ -1,0 +1,27 @@
+<div class="sorting-panel">
+  <div class="sorting-panel-item">
+    <input
+      class="input-field"
+      type="text"
+      placeholder="Find lists..."
+      [(ngModel)]="filterInput"
+    />
+    <button
+      type="button"
+      class="button-secondary"
+      (click)="onFilter(filterInput)"
+    >
+      OK
+    </button>
+  </div>
+  <div class="sorting-panel-item">
+    <select [(ngModel)]="SortParam" (change)="onSortParam(SortParam)">
+      <option value="" selected disabled hidden>Sort by:</option>
+      <option value="createdDate">Date</option>
+      <option value="title">Name</option>
+    </select>
+    <button type="button" class="button-secondary" (click)="onSortDirection()">
+      <fa-icon [icon]="faSort"></fa-icon>
+    </button>
+  </div>
+</div>

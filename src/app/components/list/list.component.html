@@ -1,0 +1,13 @@
+<a
+  class="list-menu-item"
+  [routerLink]="['/lists', list._id]"
+  routerLinkActive="is-active"
+>
+  <app-action-panel
+    *ngIf="selectedListId == list._id"
+    (newSelectedIdEvent)="onDeleteListClick($event)"
+    [editModal]="'modal-edit-list'"
+  ></app-action-panel>
+  <p>{{ list.title }}</p>
+  <span>{{ list.createdDate | date: 'medium' }}</span>
+</a>

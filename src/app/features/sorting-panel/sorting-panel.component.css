@@ -1,0 +1,35 @@
+.sorting-panel {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.sorting-panel-item {
+    display: flex;
+
+}
+
+.button-secondary {
+    width: 100%;
+    width: 26.4px;
+    max-height: 26.4px;
+    font-size: 10px;
+    color: white;
+    padding: 0;
+    line-height: 0;
+    background-color: #36A9AE;
+    border: 1px solid #2A8387;
+    cursor: pointer;
+    margin: 0px 5px;
+}
+
+.button-secondary:hover{
+    box-shadow: rgb(255 255 255 / 30%) 0 0 2px inset, rgb(0 0 0 / 40%) 0 1px 2px;
+    text-decoration: none;
+    transition-duration: .15s, .15s;
+}
+
+.input-field {
+    width: 30px;
+    height: 7px;
+}

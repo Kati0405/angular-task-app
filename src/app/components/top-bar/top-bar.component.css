@@ -1,0 +1,32 @@
+h1 {
+    color: #36A9AE;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    width: 1000px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 0 8px lightgray;
+}
+
+.button {
+    cursor: pointer;
+    color: #36A9AE;
+    font-size: 2rem;
+}
+
+.button:hover{
+    color: #1e4f52;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 100;
+    color: gray;
+}

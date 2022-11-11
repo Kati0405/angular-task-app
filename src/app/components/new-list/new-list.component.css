@@ -1,0 +1,24 @@
+input {
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.field {
+    flex-direction: column;
+}
+
+textarea {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background: #fbfbfb;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 1px #dddddd, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+}
+
+button {
+    width: 140px;
+    align-self: flex-end;
+}
+
+

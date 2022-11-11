@@ -1,0 +1,31 @@
+<div class="icons hide">
+  <fa-icon
+    title="Edit"
+    [icon]="faPenToSquare"
+    (click)="modalService.open(this.editModal)"
+  ></fa-icon>
+  <fa-icon
+    title="Archive"
+    *ngIf="isTask"
+    [icon]="faBook"
+    (click)="onArchive()"
+  ></fa-icon>
+  <a
+    [routerLink]="[
+      '/lists',
+      selectedListId,
+      'tasks',
+      selectedTaskId,
+      'comments'
+    ]"
+    ><fa-icon title="Comments" *ngIf="isTask" [icon]="faComment"></fa-icon
+  ></a>
+  <fa-icon title="Delete" [icon]="faTrash" (click)="onSelectId()"></fa-icon>
+  <a [routerLink]="['/lists', selectedListId, 'description']"
+    ><fa-icon
+      title="Details"
+      *ngIf="showMore"
+      [icon]="faEllipsisVertical"
+    ></fa-icon
+  ></a>
+</div>

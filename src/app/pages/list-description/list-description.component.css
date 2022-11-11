@@ -1,0 +1,12 @@
+.back a{
+    color: #36A9AE;
+}
+
+.back {
+    align-self: flex-end;
+}
+
+.white-box {
+    display: flex;
+    flex-direction: column;
+}

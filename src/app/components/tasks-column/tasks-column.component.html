@@ -1,0 +1,41 @@
+<div
+  class="tasks-container-item"
+  [ngStyle]="{ 'background-color': selected.color }"
+>
+  <div class="column-header">
+    <h5>{{ title }}</h5>
+    <select [(ngModel)]="selected">
+      <option
+        *ngFor="let datas of data"
+        [ngStyle]="{ 'background-color': datas.color }"
+        [ngValue]="datas"
+      ></option>
+    </select>
+  </div>
+  <app-sorting-panel
+    *ngIf="tasks.length !== 0"
+    (SortDirectionEvent)="onsort($event)"
+    (FilterEvent)="onfilter($event)"
+    (SortParamEvent)="onsortparam($event)"
+  ></app-sorting-panel>
+  <div
+    cdkDropList
+    id="{{ column }}"
+    [cdkDropListData]="tasks"
+    [cdkDropListConnectedTo]="connectedTo"
+    class="tasks-column"
+    (cdkDropListDropped)="drop($event)"
+  >
+    <app-task
+      *ngFor="
+        let task of tasks
+          | filter: this.filterInput
+          | sort: [this.SortParam, this.SortDirection]
+      "
+      cdkDrag
+      [task]="task"
+      [ngClass]="{ completed: task.completed }"
+      [selectedListId]="selectedListId"
+    ></app-task>
+  </div>
+</div>

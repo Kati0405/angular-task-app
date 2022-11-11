@@ -1,0 +1,11 @@
+p {
+    font-size: smaller;
+}
+
+p a {
+    color: #2A8387
+}
+
+p a:hover {
+    color: turquoise
+}

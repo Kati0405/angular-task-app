@@ -1,0 +1,45 @@
+.task span{
+    font-size: 10px;
+    color: gray;
+}
+
+.task {
+    position: relative;
+    background: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* app-action-panel {
+    display: none;
+}
+
+.task:hover app-action-panel {
+       display: flex
+} */
+
+
+.task:not(.archived):hover {
+    box-shadow: 0 0 0 5px #eeee;
+    cursor: pointer;
+}
+
+.task.is-active {
+    border: 2px solid darkcyan;
+
+}
+
+.task.archived {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+.task-title {
+    font-size: 12px;
+}
