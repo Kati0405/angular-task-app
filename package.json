@@ -1,7 +1,6 @@
 {
   "name": "task-controll-app",
   "version": "0.0.0",
-  "homepage": "https://kati0405.github.io/angular-task-app/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
