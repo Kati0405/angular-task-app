@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "deployUrl": "/angular-task-app/",
             "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
