@@ -13,6 +13,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
+=======
+            "deployUrl": "https://kati0405.github.io/angular-task-app/",
+>>>>>>> master
             "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
