@@ -10,7 +10,11 @@ const routes: Routes = [
   { path: '', redirectTo: '/lists', pathMatch: 'full' },
   { path: 'login', component: LoginPageComponent },
   { path: 'signup', component: SignupPageComponent },
+<<<<<<< Updated upstream
   { path: 'lists', component: TaskViewComponent },
+=======
+  { path: 'angular-task-app', component: TaskViewComponent },
+>>>>>>> Stashed changes
   { path: 'lists/:listId', component: TaskViewComponent },
   { path: 'lists/:listId/edit-task/:taskId', component: TaskViewComponent },
   { path: 'lists/:listId/description', component: ListDescriptionComponent },
