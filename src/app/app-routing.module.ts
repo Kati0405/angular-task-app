@@ -7,9 +7,10 @@ import { TaskCommentsComponent } from './pages/task-comments/task-comments.compo
 import { TaskViewComponent } from './pages/task-view/task-view.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'lists', pathMatch: 'full' },
   { path: 'login', component: LoginPageComponent },
   { path: 'signup', component: SignupPageComponent },
-  { path: '', component: TaskViewComponent },
+  { path: 'lists', component: TaskViewComponent },
   { path: 'lists/:listId', component: TaskViewComponent },
   { path: 'lists/:listId/edit-task/:taskId', component: TaskViewComponent },
   { path: 'lists/:listId/description', component: ListDescriptionComponent },

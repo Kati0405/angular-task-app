@@ -37,7 +37,8 @@ export class NewTaskComponent implements OnInit {
 
   createTask(title: string) {
     this.taskService.createTask(title, this.listId).subscribe((newTask: Task) => {
-      this.router.navigate(['/lists', { listId: this.listId }])
+      this.router.navigate(['/lists', this.listId])
+      this.modalService.close('modal-new-task')
     })
   }
 

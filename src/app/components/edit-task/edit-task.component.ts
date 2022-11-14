@@ -3,7 +3,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { ModalService } from 'src/app/services/modal.service';
 import { TaskService } from 'src/app/services/task.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Task } from 'src/app/models/task';
+
 
 @Component({
   selector: 'app-edit-task',
